@@ -1,0 +1,18 @@
+<h1>All Bookmark</h1>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>URL</th>
+    <th>Rating</th>
+    <th>Action</th>
+  </tr>
+
+  <% @bookmarks.each do |bookmark| %>
+    <tr>
+      <td><%= link_to bookmark.title, bookmark %></td>
+      <td><%= bookmark.url %></td>
+      <td><%= bookmark.rating %>/3</td> 
+      <td><%= link_to "Delete", bookmark, method: :delete %></td>
+    </tr>
+  <% end %>
+</table>

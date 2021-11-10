@@ -1,0 +1,7 @@
+<h1><%= @bookmark.title %></h1>
+
+<p>URL: <%= @bookmark.url %></p>
+<p>Rating: <%= @bookmark.rating %>/3</p>
+<p><%= link_to "Destroy", bookmark_path(@bookmark),
+  method: :delete,
+  data: { confirm: "Are you sure?" } %></p>

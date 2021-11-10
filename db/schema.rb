@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_06_222920) do
+ActiveRecord::Schema.define(version: 2021_11_08_100130) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "bookmarks", force: :cascade do |t|
-    t.text "name"
+    t.text "title"
     t.text "url"
     t.integer "rating"
     t.datetime "created_at", precision: 6, null: false
