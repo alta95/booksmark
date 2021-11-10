@@ -12,7 +12,10 @@
       <td><%= link_to bookmark.title, bookmark %></td>
       <td><%= bookmark.url %></td>
       <td><%= bookmark.rating %>/3</td> 
-      <td><%= link_to "Delete", bookmark, method: :delete %></td>
+      <td>
+        <%= link_to "Edit", controller: "bookmarks", action: "edit", id: bookmark.id%>
+        <%= link_to "Delete", bookmark, method: :delete %>
+      </td>
     </tr>
   <% end %>
 </table>
