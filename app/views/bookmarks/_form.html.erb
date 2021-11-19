@@ -10,8 +10,16 @@
   </div>
 
   <div>
-    <%= form.label :title %><br>
-    <%= form.number_field :rating %><br>
+    <%= form.label :rating %><br>
+    <%= form.radio_button :rating, 0 %>
+    <%= form.label :rating_0, "0" %>
+    <%= form.radio_button :rating, 1 %>
+    <%= form.label :rating_1, "1" %>
+    <%= form.radio_button :rating, 2 %>
+    <%= form.label :rating_2, "2" %>
+    <%= form.radio_button :rating, 3 %>
+    <%= form.label :rating_3, "3" %>
+    
   </div>
 
   <div>
